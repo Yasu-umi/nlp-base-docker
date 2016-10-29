@@ -21,7 +21,7 @@ RUN mkdir /temp && cd /temp && \
     tar zxf mecab-${MECAB_VERSION}.tar.gz && \
     cd mecab-${MECAB_VERSION} && \
     ./configure --enable-utf8-only --with-charset=utf8 && \
-    make && make install && \
+    make && make install && ldconfig && \
     cd && rm -r /temp
 
 # install mecab-ipadic

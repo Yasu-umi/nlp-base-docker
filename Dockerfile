@@ -33,7 +33,7 @@ RUN mkdir /temp && cd /temp && \
 
 # install tensorflow
 RUN pip install pip --ignore-installed --upgrade && \
-    pip install --ignore-installed --upgrade $(TENSORFLOW_URL)
+    pip install --ignore-installed --upgrade ${TENSORFLOW_URL}
 
 # install mecab-ipadic-neologd
 RUN mkdir /temp && cd /temp && \

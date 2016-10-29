@@ -12,7 +12,7 @@ RUN apt-get update && apt-get upgrade -qy && \
     curl git file build-essential pkg-config \
     libblas-dev liblapack-dev libatlas-base-dev gfortran \
     python-dev python-pip \
-    libfreetype6-dev libpng-dev libmysqlclient-dev libffi-dev libssl-dev lib32ncurses5-dev libhdf5-dev && \
+    libfreetype6-dev libpng-dev libmysqlclient-dev libffi-dev libssl-dev lib32ncurses5-dev libhdf5-dev cython && \
     apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 # install mecab

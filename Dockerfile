@@ -9,7 +9,7 @@ ENV TENSORFLOW_URL https://storage.googleapis.com/tensorflow/linux/cpu/tensorflo
 
 RUN apt-get update && apt-get upgrade -qy && \
     apt-get install -y --no-install-recommends \
-    curl git build-essential pkg-config \
+    curl git file build-essential pkg-config \
     libblas-dev liblapack-dev libatlas-base-dev gfortran \
     python-dev python-pip \
     libfreetype6-dev libpng-dev libmysqlclient-dev libffi-dev libssl-dev lib32ncurses5-dev libhdf5-dev && \
